@@ -1,10 +1,10 @@
 'hw_2.1'
-def configure_input(user_input: str):
-    if len(user_input) < 4 or len(user_input) > 4:
-        print('Please, enter 4-digit number')
-    else:
-        return str(user_input.readlines)
+number = int(input('Enter 4-digit number: '))
 
-
-my_input = input('Enter: '12)
-print(configure_input(my_input))
+div1000, mod1000 = divmod(number, 1000)
+print(div1000)
+div100, mod100 = divmod(mod1000, 100)
+print(div100)
+div10, mod10 = divmod(mod100, 10)
+print(div10)
+print(mod10)
